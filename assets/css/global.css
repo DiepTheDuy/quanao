@@ -1,0 +1,82 @@
+/* nut đen */
+.color-btn.color-btn-black.active{
+    border: 3px solid #282828;
+}
+.color-btn-black.color-btn::before{
+    background-color: #282828;
+}
+
+/* nut nau */
+.color-btn.color-btn-brown.active{
+    border: 3px solid #A0522D;
+}
+.color-btn-brown.color-btn::before{
+    background-color: #A0522D;
+}
+
+/* nut xanh */
+.color-btn.color-btn-green.active{
+    border: 3px solid #228B22;
+}
+.color-btn-green.color-btn::before{
+    background-color: #228B22;
+}
+
+/* nut trang */
+.color-btn.color-btn-white.active{
+    border: 3px solid #FFFAFA;
+}
+.color-btn-white.color-btn::before{
+    background-color: #FFFAFA;
+}
+
+/* nut hong */
+.color-btn.color-btn-pink.active{
+    border: 3px solid #FF00FF;
+}
+.color-btn-pink.color-btn::before{
+    background-color: #FF00FF;
+}
+
+/* nut do*/
+.color-btn.color-btn-red.active{
+    border: 3px solid #FF0000;
+}
+.color-btn-red.color-btn::before{
+    background-color: #FF0000;
+}
+
+/* nut xam */
+.color-btn.color-btn-gray.active{
+    border: 3px solid #A9A9A9;
+}
+.color-btn-gray.color-btn::before{
+    background-color: #A9A9A9;
+}
+
+/* nut xanh duong */
+.color-btn.color-btn-blue.active{
+    border: 3px solid #1E90FF;
+}
+.color-btn-blue.color-btn::before{
+    background-color: #1E90FF;
+}
+
+/* nut vang */
+.color-btn.color-btn-yellow.active{
+    border: 3px solid #FFFF00;
+}
+.color-btn-yellow.color-btn::before{
+    background-color: #FFFF00;
+}
+
+.w-375{
+    width: 375px !important;
+}
+
+#main-menu>li>.sub-menu .sub-menu.t-40{
+    top: 40px;
+}
+#main-menu>li>.sub-menu .sub-menu.t-70{
+    top: 70px;
+}

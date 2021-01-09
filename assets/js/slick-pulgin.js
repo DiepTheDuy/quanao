@@ -8,11 +8,23 @@ $('.home-page-bander-slider').slick({
     
   });
 
-  $('.home-page-slider').slick({
+  $('.home-page-slider.new-colection').slick({
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 3,
-    arrows:false,
+    arrows:true,
     adaptiveHeight:true,
 
   });
+  
+  $('.home-page-slider.new-product').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    arrows:true,
+    adaptiveHeight:true,
+
+  });
+
+
+  
