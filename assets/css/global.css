@@ -70,13 +70,13 @@
     background-color: #FFFF00;
 }
 
-.w-375{
-    width: 375px !important;
+ul#main-menu li ul>li>ul.sub-menu.w-150{
+    width: 150%;
+}
+ul#main-menu li>ul.sub-menu.w-170{
+    width: 170%;
 }
 
-#main-menu>li>.sub-menu .sub-menu.t-40{
-    top: 40px;
-}
-#main-menu>li>.sub-menu .sub-menu.t-70{
-    top: 70px;
+.visible{
+    visibility: none;
 }

@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">    
-    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">   
+    <link rel="stylesheet" href="assets/font/fontawesome-free-5.15.1-web/css/all.min.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/global.css">    
     
@@ -17,7 +18,7 @@
 
 <body>
     <div id="wrapper">
-        <div id="header">
+        <div id="header" >
             <div class="container-fluid">
                 <div id="topbar-content" class="row no-gutters ">
                     <div class="col-md-12 d-flex justify-content-center pr-0 ">
@@ -26,9 +27,9 @@
                 </div>
             </div>
             <div class="container-fluid">
-                <div class="row no-gutters d-flex my-2">
+                <div id="body-header" class="row no-gutters d-flex my-2">
                     <div class="col-md-4"></div>
-                    <div class="col-md-4 text-center">
+                    <div id="body-header-logo" class="col-md-4 text-center">
                         <a class="d-block" href="">
                             <img id="logo" src="assets/img/logo/logo-the2000s.png" alt="">
                         </a>
@@ -52,8 +53,7 @@
                                 <span id="product-in-cart">0</span>
                             </div>
                         </span>
-                    </div>
-    
+                    </div>    
                 </div>
             </div>
             <div class="container-fluid">
@@ -75,7 +75,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="" class="hasSubMenu">Áo thun</a>
-                                                        <ul class="sub-menu t-40">
+                                                        <ul class="sub-menu ">
                                                             <li>
                                                                 <a href="">Áo thun tay dài</a>
                                                             </li>
@@ -86,7 +86,7 @@
                                                     </li>
                                                     <li>
                                                         <a href="" class="hasSubMenu">Áo sơ mi</a>
-                                                        <ul class="sub-menu t-70">
+                                                        <ul class="sub-menu ">
                                                             <li>
                                                                 <a href="">Áo sơ mi tay dài</a>
                                                             </li>
@@ -107,8 +107,8 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="" class="hasSubMenu">Quần nanm</a>
-                                                <ul class="sub-menu t-40">
+                                                <a href="" class="hasSubMenu">Quần nam</a>
+                                                <ul class="sub-menu ">
                                                     <li>
                                                         <a href="">Quần jean nam</a>
                                                     </li>
@@ -152,7 +152,7 @@
                                         <a href="" class="hasSubMenu">
                                             Bộ sưu tập 
                                         </a>
-                                        <ul class="sub-menu">
+                                        <ul class="sub-menu w-170">
                                             <li>
                                                 <a href="">autumn-collections</a>
                                             </li>
@@ -180,7 +180,7 @@
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="" class="hasSubMenu">Bảng size nam</a>
-                                                <ul class="sub-menu">
+                                                <ul class="sub-menu w-150">
                                                     <li>
                                                         <a href="">Chọn size quần nam</a>
                                                     </li>
@@ -197,7 +197,7 @@
                                             </li>
                                             <li>
                                                 <a href="" class="hasSubMenu">Bảng size nữ</a>
-                                                <ul class="sub-menu t-40">
+                                                <ul class="sub-menu w-150">
                                                     <li>
                                                         <a href="">Chọn size áo coat nữ</a>
                                                     </li>
@@ -250,67 +250,70 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="wp-content-header">
-                            <h3 class="content-header">Bộ sưu tập mới</h3>
+                <div id="wp-home-page-new-colection">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="wp-content-header">
+                                <h3 class="content-header">Bộ sưu tập mới</h3>
+                            </div>
                         </div>
                     </div>
+                    <div class="row home-page-slider new-colection">
+                        <div class="col-md-12 mx-1">                        
+                            <div class="home-page-slider-item">
+                                <a class="d-inline-block" href="">
+                                    <img class="img-fluid" src="assets/img/home-page-slider/summer.png" alt="">
+                                </a>
+                                <div class="caption-slider-item">
+                                    <h3>Summer-colection</h3>
+                                    <a class="btn btn-outline-light " href="">Xem thêm</a>                                
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-12 mx-1">                        
+                            <div class="home-page-slider-item">
+                                <a class="d-inline-block" href="">
+                                    <img class="img-fluid" src="assets/img/home-page-slider/summer-2.png" alt="">
+                                </a>
+                                <div class="caption-slider-item">
+                                    <h3>Summer</h3>
+                                    <a class="btn btn-outline-light " href="">Xem thêm</a>                                
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-12 mx-1">                        
+                            <div class="home-page-slider-item">
+                                <a class="d-inline-block" href="">
+                                    <img class="img-fluid" src="assets/img/home-page-slider/natural.png" alt="">
+                                </a>
+                                <div class="caption-slider-item">
+                                    <h3>Natural</h3>
+                                    <a class="btn btn-outline-light " href="">Xem thêm</a>                                
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="col-md-12 mx-1">                        
+                            <div class="home-page-slider-item">
+                                <a class="d-inline-block" href="">
+                                    <img class="img-fluid" src="assets/img/home-page-slider/spring.png" alt="">
+                                </a>
+                                <div class="caption-slider-item">
+                                    <h3>Spring</h3>
+                                    <a class="btn btn-outline-light " href="">Xem thêm</a>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>                              
                 </div>
-                <div class="row home-page-slider new-colection">
-                    <div class="col-md-12 mx-1">                        
-                        <div class="home-page-slider-item">
-                            <a class="d-inline-block" href="">
-                                <img class="img-fluid" src="assets/img/home-page-slider/summer.png" alt="">
-                            </a>
-                            <div class="caption-slider-item">
-                                <h3>Summer-colection</h3>
-                                <a class="btn btn-outline-light " href="">Xem thêm</a>                                
+                <div id="wp-homme-page-new-product">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="wp-content-header">
+                                <h3 class="content-header">Sản phẩm mới</h3>
                             </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-12 mx-1">                        
-                        <div class="home-page-slider-item">
-                            <a class="d-inline-block" href="">
-                                <img class="img-fluid" src="assets/img/home-page-slider/summer-2.png" alt="">
-                            </a>
-                            <div class="caption-slider-item">
-                                <h3>Summer</h3>
-                                <a class="btn btn-outline-light " href="">Xem thêm</a>                                
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-12 mx-1">                        
-                        <div class="home-page-slider-item">
-                            <a class="d-inline-block" href="">
-                                <img class="img-fluid" src="assets/img/home-page-slider/natural.png" alt="">
-                            </a>
-                            <div class="caption-slider-item">
-                                <h3>Natural</h3>
-                                <a class="btn btn-outline-light " href="">Xem thêm</a>                                
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-12 mx-1">                        
-                        <div class="home-page-slider-item">
-                            <a class="d-inline-block" href="">
-                                <img class="img-fluid" src="assets/img/home-page-slider/spring.png" alt="">
-                            </a>
-                            <div class="caption-slider-item">
-                                <h3>Spring</h3>
-                                <a class="btn btn-outline-light " href="">Xem thêm</a>                                
-                            </div>
-                        </div>
-                    </div> 
-                             
-                </div>
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <div class="wp-content-header">
-                            <h3 class="content-header">Sản phẩm mới</h3>
-                        </div>
+                        </div>                                        
                     </div>
-                    <div class="row p-0 m-0 home-page-slider new-product">
+                    <div class="row home-page-slider new-product">
                         <div class="col-md-12 mx-3">
                             <div class="product-item">
                                 <div class="product-img">
@@ -495,46 +498,396 @@
                                         <a class="btn btn-outline-dark " href="">Xem thêm</a> 
                                     </div> 
                                 </div>                            
+                            </div>                            
+                        </div>                
+                    </div>
+                </div>
+                <div id="wp-home-page-best-seller">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="wp-content-header">
+                                <h3 class="content-header">Sản phẩm bán chạy</h3>
                             </div>
-                            
                         </div>
-                        <div class="col-md-12 mx-3">
+                    </div>
+                    <div class="row best-seller">
+                        <div class="col-md-3">
                             <div class="product-item">
                                 <div class="product-img">
                                     <a  href="">
-                                        <img class="img-fluid" src="assets/img/new-products/Ao len tay dai phoi mau form regular/Ao len tay dai phoi mau form regular-gray1.jpg" alt="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Ao khoac Caro form Regular/Ao khoac Caro form Regular-black1.jpg" alt="">
                                     </a>
                                     <div class="product-color-option">                                    
-                                        <a class="color-btn color-btn-gray"  href=""></a>
-                                        <a class="color-btn color-btn-green"  href=""></a>  
-                                        <a class="color-btn color-btn-yellow"  href=""></a>                                   
+                                        <a class="color-btn color-btn-black"  href=""></a>
+                                        <a class="color-btn color-btn-brown"  href=""></a>                                                                        
                                     </div>
                                 </div>
                                 <div class="product-detail">
-                                    <h3>Áo len tay dài phối màu Regular</h3>
+                                    <h3>Áo khoác caro form Regular</h3>
                                     <div class="pro-price">
-                                        <p><span>600.000</span>₫</p>
+                                        <p><span>750.000</span>₫</p>
                                     </div>
                                     <div class="buy-add">                                        
                                         <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
                                         <a class="btn btn-outline-dark " href="">Xem thêm</a> 
                                     </div> 
                                 </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Ao Khoac Da Nam Dang Dai/Ao Khoac Da Nam Dang Dai-black1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-black"  href=""></a>
+                                        <a class="color-btn color-btn-brown"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Áo khoác dạ nam dáng dài</h3>
+                                    <div class="pro-price">
+                                        <p><span>1.750.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Ao ni nam tay dai có mu form regular/Ao ni nam tay dai có mu form regular-green1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-red"  href=""></a>
+                                        <a class="color-btn color-btn-green"  href=""></a> 
+                                        <a class="color-btn color-btn-yellow"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Áo nỉ nam tay dài có mũ form Regular</h3>
+                                    <div class="pro-price">
+                                        <p><span>800.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan short jeans nam form straight/Quan short jeans nam form straight-1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-black"  href=""></a>                                                                                                   
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần short jean nam form striaght</h3>
+                                    <div class="pro-price">
+                                        <p><span>500.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan short ke soc linen/Quan short ke soc linen-blue1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-blue"  href=""></a>
+                                        <a class="color-btn color-btn-white"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần short kẻ sọc lien</h3>
+                                    <div class="pro-price">
+                                        <p><span>780.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan short seesucker form straight/Quan short seesucker form straight-blue2.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-blue"  href=""></a>
+                                        <a class="color-btn color-btn-green"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần short seesucker form straight</h3>
+                                    <div class="pro-price">
+                                        <p><span>450.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan tay ke sọc form slimcrop/Quan tay ke sọc form slimcrop-1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                               
+                                        
+                                        <a class="color-btn color-btn-green"  href=""></a>                                                                                                          
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần tây nam kẻ sọc form slimcrop</h3>
+                                    <div class="pro-price">
+                                        <p><span>800.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan tay tron lung thun/Quan tay tron lung thun-black1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-black"  href=""></a>  
+                                        <a class="color-btn color-btn-blue"  href=""></a>                                                                                                  
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần tây nam tròn lưng thun</h3>
+                                    <div class="pro-price">
+                                        <p><span>760.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>               
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Ao so mi denim tay dai/Ao so mi denim tay dai-black1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-black"  href=""></a>
+                                        <a class="color-btn color-btn-blue"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Áo sơ mi demin tay dai</h3>
+                                    <div class="pro-price">
+                                        <p><span>380.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Ao So Mi Nam Tay Dai Form Loose Fit/Ao So Mi Nam Tay Dai Form Loose Fit-blue1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-blue"  href=""></a>
+                                        <a class="color-btn color-btn-red"  href=""></a>
+                                        <a class="color-btn color-btn-white"  href=""></a>                                                                        
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Áo sơ mi nam tay dài form loose fit</h3>
+                                    <div class="pro-price">
+                                        <p><span>400.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan vai nam caro form Slim Crop/Quan vai nam caro form Slim Crop-black1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                               
+                                        <a class="color-btn color-btn-black"  href=""></a>
+                                        <a class="color-btn color-btn-white"  href=""></a>                                                                                                          
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần vải nam caro form slim crop</h3>
+                                    <div class="pro-price">
+                                        <p><span>830.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>
+                        <div class="col-md-3">
+                            <div class="product-item">
+                                <div class="product-img">
+                                    <a  href="">
+                                        <img class="img-fluid" src="assets/img/best-seller/Quan vai nam dài ke sọc form slim crop/Quan vai nam dài ke sọc form slim crop-black1.jpg" alt="">
+                                    </a>
+                                    <div class="product-color-option">                                    
+                                        <a class="color-btn color-btn-black"  href=""></a>  
+                                        <a class="color-btn color-btn-gray"  href=""></a>                                                                                                  
+                                    </div>
+                                </div>
+                                <div class="product-detail">
+                                    <h3>Quần vải nam dài kẻ sọc form slim crop</h3>
+                                    <div class="pro-price">
+                                        <p><span>550.000</span>₫</p>
+                                    </div>
+                                    <div class="buy-add">                                        
+                                        <a class="btn btn-outline-dark " href="">Thêm giỏ hàng</a>
+                                        <a class="btn btn-outline-dark " href="">Xem thêm</a> 
+                                    </div> 
+                                </div>                            
+                            </div>        
+                        </div>                                                   
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div id="wp-footer">
+            <div class="container-fluid">
+                <div class="row">                    
+                <div class="col-md-12" id="head-footer">
+                    <h3>- The 2000s -</h3>
+                </div>
+                <div class="col-md-12" id="wp-footer-content">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="footer-content-header">
+                                Công ty
+                            </div>                        
+                            <ul class="footer-content" >
+                                <li>
+                                    <a class=" d-inline-block" href="">The 2000s blogs</a>
+                                </li>
+                                <li class="none">
+                                    <a class=" d-inline-block " href="">Co-fonder & Web developers:</a>
+                                </li>
+                                <li class=" ps-2 none">
+                                    <a class=" d-inline-block " href="">diệp thế duy</a>
+                                </li>
+                                <li class=" ps-2 none">
+                                    <a class=" d-inline-block " href="">trần việt hoàng</a>
+                                </li>
+                                <li class=" ps-2 none">
+                                    <a class=" d-inline-block " href="">nguyễn thanh tú</a>
+                                </li>
+                                <li class=" ps-2 none">
+                                    <a class=" d-inline-block " href="">trương văn biên</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content-header">
+                                Chính sách khách hàng
+                            </div>                            
+                            <ul class="footer-content" >
+                                <li>
+                                    <a class=" d-inline-block" href="">Chính sách khách hàng thân thiết</a>
+                                </li>
+                                <li>
+                                    <a class=" d-inline-block" href="">chính sách đổi trả</a> 
+                                </li>
+                                <li>
+                                    <a class=" d-inline-block" href="">chính sách bảo hàng</a>
+                                </li>
+                                <li>
+                                    <a class=" d-inline-block" href="">chính sách bảo mật thông tin tài khoản</a> 
+                                </li>                    
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content-header">
+                                Kết nối với the 2000s
                             </div>
-                            
+                            <div class="footer-content">
+                                <a href="">
+                                    <i class="fab fa-facebook-square "></i>
+                                </a>
+                                <a href="">
+                                    <i class="fab fa-instagram-square "></i>
+                                </a>  
+                                <a href="">
+                                    <i class="fab fa-youtube-square "></i>  
+                                </a>  
+                                <a href="">
+                                    <i class="fab fa-pinterest-square "></i>
+                                </a>    
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="footer-content-header">
+                                Thông tin cửa hàng
+                            </div>                            
+                            <ul class="footer-content" >
+                                <li>
+                                    <b>Địa chỉ:</b>
+                                </li>
+                                <li>
+                                    <a class=" d-inline-block" href="">  Lô E1, Phân khu đào tạo E1, Khu Công Nghệ cao TP.HCM, Phường Hiệp Phú, Quận 9, TP.HCM.  </a>
+                                </li>                                
+                            </ul>
                         </div>
                     </div>
-                    
                 </div>
+                <div class="col-md-12" id="copy-right">
+                    Nhóm: The 2000s | Môn: Công nghệ phần mềm | Đồ án môn học
+                </div>
+                
             </div>
-            
-        </div>
-        <div id="footer">
-
         </div>
     </div>
 
     <script src="assets/js/jquery.js"></script>
+    
     <script src="assets/js/slick.min.js" ></script>
     <script src="assets/js/bootstrap.min.js"></script>   
     <script src="assets/js/slick-pulgin.js"></script>
