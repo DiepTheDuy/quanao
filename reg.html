@@ -230,26 +230,73 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-header">
-                            <h2>Đăng nhập</h2>
+                            <h2>Tạo tài khoản</h2>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-wp">
                             <form>
-                                <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Tài khoản Email</label>
-                                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-                                  <span></span>
+                                <div class="mb-3">  
+                                    <label for="exampleInputName" class="form-label">Nhập họ tên</label>                                  
+                                    <input type="text" class="form-control" id="exampleInputName" placeholder="Họ tên">
+                                      <span></span>
+                                  </div>
+                                <div class="mb-3 d-flex">  
+                                  <div class="w-50">
+                                    <label for="exampleInputEmail1" class="form-label">Tài khoản Email</label>                                
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                    <span></span>
+                                </div>  
+                                  <div class="w-50">
+                                    <label for="exampleInputPhoneNumber" class="form-label">Số điện thoại</label>                               
+                                    <input type="text" class="form-control ms-1" id="exampleInputPhoneNumber" aria-describedby="emailHelp" placeholder="Số điện thoại">
+                                    <span></span>
+                                </div>
+                                 
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
-                                  <span></span>
+                                    <label for="exampleInputAddress" class="form-label">Địa chỉ</label>
+                                    <input type="text" class="form-control" id="exampleInputAddress" placeholder="Địa chỉ">
+                                    <span></span>
+                                </div>
+                                <div class="mb-3 d-flex">                                    
+                                    <select class="form-select" id="inputGroupSelect01" >
+                                        <option selected>Tỉnh / thành</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        
+                                    </select>
+                                    <select class="form-select ms-1" id="inputGroupSelect01">
+                                        <option selected>Quận / huyện</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                        
+                                    </select>
+                                    <select class="form-select  ms-1" id="inputGroupSelect01">
+                                        <option selected>Phường xã</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>                                        
+                                    </select>
+                                    <span></span>
                                 </div>
                                 <div class="mb-3">
-                                    <p></p><a class="text-decoration-none" href="">Quên mật khẩu</a> hoặc <a class="text-decoration-none" href="">Đăng ký</a></p>
+                                    <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                                    <span></span>
+                                </div> 
+                                <div class="mb-3 ">
+                                    <label for="exampleInputPassword2" class="form-label">Nhập lại mật khẩu</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Xác nhận">
+                                    <span></span>
+                                </div> 
+                                <div class="mb-3 d-flex">
+                                    <p>Thannh toán khi nhận hàng</p>
+                                    <a class=" ms-3 text-decoration-none" href=""> Quay lại trang chủ</a>
                                 </div>                           
-                                <button type="submit" class="btn btn-outline-dark">Đăng nhập</button>
+                                <button type="submit" class="btn btn-outline-dark">Đăng ký</button>
                             </form>
                         </div>
                     </div>
