@@ -57,12 +57,12 @@
     position: absolute;
     top: -7px;
     left: 17px;
-    width: 85%;
-    height: 70%;
+    width: 1.5rem;
+    height: 1.5rem;
     background-color: rgb(236, 25, 25);
-    text-align: center;
     box-shadow: 3px 2px 6px rgb(121, 112, 112);
-    border-radius: 60%;
+    border-radius: 50%;
+    
 }
 #header-wrap-icon #icon-bag #wp-product-in-cart #product-in-cart{ color: #f3f3f3; font-weight: bold;}
 /* -------------- End body-header ---------- */
@@ -234,9 +234,8 @@ ul#main-menu>li:hover>a::before{
 
 .slick-arrow{
     background: #f3f3f3;
-    text-align: center;
-    width: 4%;
-    height: 12%;
+    width: 3rem;
+    height: 3rem;
     z-index: 1;
     border-radius: 50%;
 }
@@ -245,13 +244,16 @@ ul#main-menu>li:hover>a::before{
 .slick-next.slick-arrow{  right: 10px ; box-shadow: 3px 0px 7px black; }
 
 .slick-prev::before {
-    content: "←";
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
     color: black;
+
     font-weight: bold;
     font-size: 30px;
 }
 .slick-next::before{    
-    content: '→';
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
     color: black;
     font-weight: bold;
     font-size: 30px;
@@ -452,7 +454,7 @@ ul#main-menu>li:hover>a::before{
 }
 
 .form-wp{
-    padding: 50px 140px;
+    padding: 50px 80px;
 }
 
 .form-header{
