@@ -163,7 +163,7 @@ ul#main-menu>li:hover>a::before{
 
 #main-menu>li:hover>a.hasSubMenu::after{ transform: rotate(180deg); transition: 0.3s; }
 
-
+#main-menu>li ul.sub-menu li:hover>a.hasSubMenu::after{ transform: rotate(-90deg); transition: 0.3s;}
 /* -------------------- End menu --------------- */
 
 /* ======================== End Header =========================== */
