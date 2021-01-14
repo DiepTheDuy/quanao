@@ -1,5 +1,8 @@
 /* =================================== Trang chủ ====================================== */
-
+#site{
+    position: relative;
+    overflow: hidden;
+}
 
 #wrapper{    position: relative;}
 
@@ -9,7 +12,7 @@
 #header.sticky{
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
     background-color: white;
 }
 
@@ -17,7 +20,7 @@
 #header.sticky #body-header:first-child{ display: none;}
 
 #header.sticky #body-header #body-header-logo{ position: absolute;  top: 36px;}
-#header.sticky #body-header #body-header-logo #logo{   width: 25%; }
+#header.sticky #body-header #body-header-logo #logo{   width: 120px; }
 
 #header.sticky #body-header #header-wrap-icon{
     padding-top: 0;
@@ -64,7 +67,50 @@
     border-radius: 50%;
     
 }
+
 #header-wrap-icon #icon-bag #wp-product-in-cart #product-in-cart{ color: #f3f3f3; font-weight: bold;}
+
+#bg-search-box.active{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#wp-search-box{
+    position: absolute;
+    top: 0;
+    right: -400px;
+    height: 100%;
+    width: 400px;
+    text-align: center;
+    background-color: #f3f3f3;
+    z-index: 101;
+    padding: 40px 20px 0px 20px;
+    transition: right 0.5s;
+    position: fixed;
+}
+#wp-search-box.open-search-box{
+    transition: right 0.5s;
+    right: 0;
+    
+}
+#search-box{
+    position: relative;
+}
+#search-box i{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;       
+}
+#sreach-box-input i{
+    line-height: 30px;
+}
+
+
+
 /* -------------- End body-header ---------- */
 
 
@@ -281,9 +327,12 @@ ul#main-menu>li:hover>a::before{
     width: 100%;
 }
 
-.product-item .product-detail h3{
+.product-item .product-detail>a{
     font-size: 20px;
     font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
     white-space: pre-wrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -291,8 +340,11 @@ ul#main-menu>li:hover>a::before{
     -webkit-box-orient: vertical;
      display: -webkit-box;
 }
+.product-item .product-detail>a:hover{
+    color: #0d6efd;
+}
 
-.product-item .product-detail p{
+.pro-price p{
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 0;    
@@ -307,43 +359,37 @@ ul#main-menu>li:hover>a::before{
 }
 .product-item .product-detail .buy-add a{  margin: 0px 5px 0px 5px;  width: 50%;}
 
-.product-item .product-color-option{
-    background-color:#c9c8c8;
-    height: 57px;
-    width: 100%;
+.product-color-option{
+
     display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: -60px;
-    transition-delay: 0.5s;
-    transition-property: bottom;
-    transition-duration: 0.5s;
+   
+  
     
 }
-.product-item:hover .product-color-option{ bottom: 0;} 
 
-.product-item .product-color-option .color-btn{
+.product-color-option .color-btn{
     display: block;
-    height: 70%;
-    width: 11%;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
     margin: 10px 15px 0px 15px;
     border: 3px solid  rgba(0, 0, 0, 0);
     transition: all 0.5s;
     position: relative;
 }
-.product-item .product-color-option .color-btn:hover { transition: all 0.5s; }
+.product-color-option .color-btn:hover { transition: all 0.5s; }
 
-.product-item .product-color-option .color-btn::before{
+.product-color-option .color-btn::before{
     content: '';    
     position: absolute;
-    width: 87%;
-    height: 87%;
-    top: 2px;
-    left: 2px;
+    width: 85%;
+    height: 85%;
+    top: 3px;
+    left: 3px;
     border-radius: 50%;
     border: 3px solid rgba(0, 0, 0, 0.2);    
 }
+
 #wp-home-page-best-seller .product-item{ margin-bottom: 50px;  }
 /* ------------------- End products ----------------------- */
 
@@ -460,7 +506,7 @@ ul#main-menu>li:hover>a::before{
 .form-header{
     font-size: 100px;
     height: 100%;
-    padding: 100px 20px 5px 160px;
+    padding: 50px 20px 5px 0px;
     border-right: 2px solid #e9e9e9;
 }
 .form-header h2{
@@ -479,4 +525,56 @@ ul#main-menu>li:hover>a::before{
 
 .dialog-heading .img-fluid{
     width: 8%;
+}
+
+
+
+.wp-product-size{
+    display: flex;
+}
+.product-size a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-right: 20px;
+    border: 1px solid black;
+    background-color: #f3f3f3;
+    color: black;
+}
+
+.product-size a.active{    
+    background-color: #c5c5c5;    
+}
+
+.input-group.count {
+    width: 127px;
+}
+.input-group .input-group-btn{
+    border: 1px solid #afafaf;
+    background-color: #f3f3f3;
+}
+.input-group .input-number{
+    border-top: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+}
+
+.detail-product .product-name h3{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+.detail-product .pro-price p{
+    font-size: 32px;
+
+}
+
+.wp-detail-product.sticky{
+    position: fixed;
+    margin-top: 30px;
+}
+
+.product-view-slider{
+    display: none;
+}
+.product-view-slider.active{
+    display: block;
 }

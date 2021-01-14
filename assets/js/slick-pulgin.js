@@ -26,5 +26,24 @@ $('.home-page-bander-slider').slick({
 
   });
 
-
   
+
+
+ 
+
+  $('.product-view-slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false ,
+    draggable: false ,
+    fade: true,
+    asNavFor: '.product-view-slider-nav'
+  });
+  $('.product-view-slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.product-view-slider-for',    
+    dots: true,
+    centerMode: true,
+    focusOnSelect: true
+  });
