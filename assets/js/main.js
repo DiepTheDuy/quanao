@@ -139,20 +139,20 @@ $( document ).ready(function() {
       var minValue =  parseInt($(this).attr('min'));
       var maxValue =  parseInt($(this).attr('max'));
       if(!minValue) minValue = 1;
-      if(!maxValue) maxValue = 999;
+      if(!maxValue) maxValue = 30;
       var valueCurrent = parseInt($(this).val());
       
       var name = $(this).attr('name');
       if(valueCurrent >= minValue) {
           $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
       } else {
-          alert('Sorry, the minimum value was reached');
+          alert('Vui lòng nhập lại');
           $(this).val($(this).data('oldValue'));
       }
       if(valueCurrent <= maxValue) {
           $(".btn-number[data-type='plus'][data-field='"+name+"']").removeAttr('disabled')
       } else {
-          alert('Sorry, the maximum value was reached');
+          alert('Bạn đã đặt quá số lượng cho phép ( tối đa 30 )');
           $(this).val($(this).data('oldValue'));
       }
       
@@ -183,3 +183,12 @@ $(document).ready(function(){
         $(this).toggleClass('active');
       });
 });
+
+
+$(document).ready(function () {
+  $('.wp-detail-product').stickySidebar({
+    topSpacing: 100,
+    bottomSpacing: 60
+  });
+});
+

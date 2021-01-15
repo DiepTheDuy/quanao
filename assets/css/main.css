@@ -135,6 +135,7 @@ ul#main-menu li a{
     position: absolute;
     padding: 0;
     background-color: white;
+    z-index: 99;
 }
 #main-menu>li>.sub-menu{
     top: 100%;
@@ -367,7 +368,7 @@ ul#main-menu>li:hover>a::before{
     
 }
 
-.product-color-option .color-btn{
+.color-btn{
     display: block;
     height: 48px;
     width: 48px;
@@ -377,9 +378,9 @@ ul#main-menu>li:hover>a::before{
     transition: all 0.5s;
     position: relative;
 }
-.product-color-option .color-btn:hover { transition: all 0.5s; }
+.color-btn:hover { transition: all 0.5s; }
 
-.product-color-option .color-btn::before{
+.color-btn::before{
     content: '';    
     position: absolute;
     width: 85%;
@@ -547,7 +548,7 @@ ul#main-menu>li:hover>a::before{
 }
 
 .input-group.count {
-    width: 127px;
+    width: 115px;
 }
 .input-group .input-group-btn{
     border: 1px solid #afafaf;
@@ -577,4 +578,81 @@ ul#main-menu>li:hover>a::before{
 }
 .product-view-slider.active{
     display: block;
+}
+.description-productdetail p{
+    margin-bottom: 0;
+}
+
+
+
+tr.table-item{
+    position: relative;
+}
+.table td.img{
+    width: 170px;
+    height: auto;
+}
+.table th.count-num{
+    width: 7%;
+}
+.table th.table-pro-info{
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.table td .pro-property .color-btn{
+    height: 29px;
+    width: 29px;
+   
+     margin: 0px 10px 0px 0px;
+    
+}
+.table td .pro-property p{
+    font-weight: bold;
+    
+}
+.table td a.pro-info{
+    text-decoration: none;
+    color: black;
+    
+}
+.table td p.pro-price{
+    font-size: 20px;  
+    font-weight: 500;  
+    
+}
+.table th.table-pro-price{
+    text-align: end;     
+}
+.table td p.price{
+    vertical-align: middle;  
+    font-size: 28px;
+    font-weight: 600;
+    text-align: end;
+}
+.table td.wp-price{
+    vertical-align: middle;      
+}
+.table td .pro-property .color-btn::before{
+    top: 2px;
+    left: 2px;
+    
+}
+.table tr td p{
+    margin-bottom: 5px;
+}
+.wp-payment{
+    text-align: end;
+}
+.payment-option{
+    justify-content: flex-end;
+}
+.sum-price{
+    font-size: 35px;
+    font-weight: 600;
+}
+.remove-pro{
+    position: absolute;
+    border-bottom: 0px;
+    right: 140px;
 }
