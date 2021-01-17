@@ -442,13 +442,14 @@ ul#main-menu>li:hover>a::before{
     font-size: 30px;
     text-transform: capitalize;
 }
-#content #wp-policy-menu {
+#content #wp-page-menu {
     border: 1px solid #d5d5d5;
     border-radius: 5px;
     padding: 15px;
+    margin: 15px;
 
 }
-#content #wp-policy-menu .policy-menu-header{
+#content #wp-page-menu .menu-header{
 
     text-align: center;
     padding-bottom: 10px;
@@ -457,24 +458,29 @@ ul#main-menu>li:hover>a::before{
 
     
 }
-#content #wp-policy-menu .policy-menu-header p{
-
+#content #wp-page-menu .menu-header p{
     margin: 0;
     font-size: 30px;
     text-transform: capitalize;
 }
-#content #wp-policy-menu ul.policy-menu {
+#content #wp-page-menu ul {
     padding: 0;
 }
-#content #wp-policy-menu ul.policy-menu li a {
+#content #wp-page-menu ul li a {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
     padding: 5px 0px;
 }
-#content #wp-policy-menu ul.policy-menu li a:hover {
+#content #wp-page-menu ul li a:hover {
     color: #939393;
 }
+.heading-page h3{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+
 
 #content .page-wrapper #refund-condition-policy .refund-condition-img-box{
     display: flex;
@@ -495,10 +501,10 @@ ul#main-menu>li:hover>a::before{
     max-width: 70%;
 }
 
-#wp-policy-menu.sticky{
+/* #wp-page-menu.policy.sticky{
     position: fixed;
     margin-top: 50px;
-}
+} */
 
 .form-wp{
     padding: 50px 80px;
@@ -656,3 +662,29 @@ tr.table-item{
     border-bottom: 0px;
     right: 140px;
 }
+
+.product-section-name h3{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.wp-pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.wp-pagination .Page.navigation{
+    font-size: 30px;
+}
+.wp-pagination li.page-item a{
+   color: black;
+}
+
+.wp-product-section-item .product-item{
+    margin-bottom: 30px;
+}
+
+/* .inner-wrapper-sticky{
+    top: 0;
+} */
