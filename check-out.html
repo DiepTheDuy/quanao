@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/global.css">    
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet"> 
-    <title>Thông tin tài khoản</title>
+    <title>Check out đơn hàng</title>
     <link rel="shortcut icon" type="image/png" href="assets/img/logo/web-icon.jpg" />
 </head>
 
@@ -225,67 +225,303 @@
             </div>
             <div id="content">
                 <div class="container">
-                    <div class="row">
+                    <div class="row">                        
                         <div class="col-md-6">
-                            <div class="form-header">
-                                <h2>Thông tin tài khoản</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-wp">
+                            <div class="form-wp p-0 side-bar">
+                                <h2 class="text-center text-capitalize">Kiểm tra thông tin cá nhân</h2>
                                 <form>
-                                    <div class="mb-3">  
+                                    <div class="mb-3"> 
+                                        
                                         <label for="exampleInputName" class="form-label">Họ tên</label>                                  
-                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Họ tên">
+                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Họ tên" aria-label="readonly input example" readonly>
                                         <span></span>
                                     </div>
                                     <div class="mb-3 d-flex">  
                                     <div class="w-50">
                                         <label for="exampleInputEmail1" class="form-label">Tài khoản Email</label>                                
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" aria-label="readonly input example" readonly>
                                         <span></span>
                                     </div>  
                                     <div class="w-50">
                                         <label for="exampleInputPhoneNumber" class="form-label">Số điện thoại</label>                               
-                                        <input type="text" class="form-control ms-1" id="exampleInputPhoneNumber" aria-describedby="emailHelp" placeholder="Số điện thoại">
+                                        <input type="text" class="form-control ms-1" id="exampleInputPhoneNumber" aria-describedby="emailHelp" placeholder="Số điện thoại" aria-label="readonly input example" readonly>
                                         <span></span>
                                     </div>
                                     
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputAddress" class="form-label">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="exampleInputAddress" placeholder="Địa chỉ">
+                                        <input type="text" class="form-control" id="exampleInputAddress" placeholder="Địa chỉ" aria-label="readonly input example" readonly>
                                         <span></span>
                                     </div>
                                     <div class="mb-3 d-flex">                                    
-                                        <select class="form-select" id="inputGroupSelect01" >
+                                        <select class="form-select" id="inputGroupSelecCity" disabled>
                                             <option selected>Tỉnh / thành</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                             
                                         </select>
-                                        <select class="form-select ms-1" id="inputGroupSelect01">
+                                        <select class="form-select ms-1" id="inputGroupSelectDistric" disabled>
                                             <option selected>Quận / huyện</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                             
                                         </select>
-                                        <select class="form-select  ms-1" id="inputGroupSelect01">
+                                        <select class="form-select  ms-1" id="inputGroupSelectWards" disabled>
                                             <option selected>Phường xã</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>                                        
                                         </select>
                                         <span></span>
-                                    </div>                                    
+                                    </div>
                                     <div class="mb-3">
-                                        <p></p><a class="text-decoration-none" href="change-pass.html">Đổi mật khẩu</a> / <a class="text-decoration-none" href="">Đăng xuất</a></p>
-                                    </div>                        
-                        
+                                        <label for="exampleFormControlTextarea" class="form-label">Ghi chú</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                    </div>                                    
+                                    <div class="mb-3 d-flex">
+                                        <p>Thannh toán khi nhận hàng</p>
+                                        <a class=" ms-3 text-decoration-none" href="index.html"> Quay lại trang chủ</a>
+                                    </div>                           
+                                    <a href="cus-info.html" type="submit" class="btn btn-outline-dark">Cập nhật lại thông tin</a>
                                 </form>
                             </div>
+                        </div>
+                        <div class="col-md-6">
+                            
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="count-num" scope="col">Stt</th>
+                                            <th class="table-img" scope="col">Sản phẩm</th>
+                                            <th class="table-pro-info" scope="col">Thông tin sản phẩm</th>
+                                            <th class="table-pro-price" scope="col">Thành tiền</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>   
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>   
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>   
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>   
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>   
+                                        <tr class="table-item">
+                                            <th scope="row">1</th>
+                                            <td class="img">
+                                                <a class="d-block" href="">
+                                                    <img class="img-fluid" src="assets/img/Products/Nam/Ao/Polo/Ao polo co ao mix form fitted/Ao polo co ao mix form fitted-pink-1.jpg" alt="">
+                                                </a>
+                                            </td>
+                                            <td class="wp-pro-info">
+                                                <a  href="" class="pro-info">
+                                                    <h3>Áo polo cổ áo mix form fitted</h3>
+                                                </a>
+                                                <p class="pro-price"> 
+                                                    <span>350,000</span>₫
+                                                    
+                                                </p>  
+                                                <div class="d-flex pro-property mb-1">
+                                                    <a class="color-btn color-btn-brown active"></a> 
+                                                    <p>/ <span>M</span></p> 
+                                                </div>                                                                                                                     
+                                                <div class="check-out-count">
+                                                    <p>Số lượng: <span>1</span></p>
+                                                </div>                           
+                                            </td>
+                                            <td class="wp-price">
+                                                <p class="price"> 
+                                                    <span>350,000</span>₫                                            
+                                                </p> 
+                                            </td>
+                                                                                        
+                                        </tr>                                     
+                                    </tbody>
+                                </table> 
+                                <div class="wp-payment">
+                                    <div class="sum-price">
+                                        <p >Tổng tiền: <span>350,000</span>₫</p> 
+                                    </div> 
+                                    <div class="payment-option d-flex">
+                                        <a href="index.html" type="button" class="btn btn-outline-dark py-3 me-2">Tiếp tục mua hàng</a>
+                                        <button type="button" class="btn btn-outline-dark py-3 ms-2">Xác nhận</button>
+                                    </div>
+                                </div>                         
                         </div>
                     </div>
                 </div>    
@@ -384,7 +620,8 @@
         </div>
     </div>
 
-    <script src="assets/js/jquery.js"></script>    
+    <script src="assets/js/jquery.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-sidebar/3.3.1/jquery.sticky-sidebar.min.js"></script>   
     <script src="assets/js/slick.min.js" ></script>
     <script src="assets/js/bootstrap.min.js"></script>   
     <script src="assets/js/slick-pulgin.js"></script>

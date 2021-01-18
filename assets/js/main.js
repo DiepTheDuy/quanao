@@ -91,6 +91,10 @@ $(document).ready(function(){
     $('#bg-search-box').removeClass('active');
     $('#wp-search-box').removeClass('open-search-box');
   });
+  $('#bg-search-box').click(function(){
+    $(this).removeClass('active');
+    $('#wp-search-box').removeClass('open-search-box');
+  });
 });
 
 
@@ -185,15 +189,3 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function () {
-  $('.wp-detail-product').stickySidebar({
-    topSpacing: 100,
-    bottomSpacing: 60
-  });
-});
-
-$(document).ready(function () {
-  $('.side-bar').stickySidebar({
-    topSpacing: 100,
-  });
-});
