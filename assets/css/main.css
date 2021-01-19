@@ -1,3 +1,8 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
 /* =================================== Trang chủ ====================================== */
 #site{
     position: relative;
@@ -123,7 +128,7 @@ ul#main-menu{
     margin: 0 auto;
 }
 ul#main-menu li a{
-    font-size: 15px;
+    font-size: 14px;
     display: block;
     text-decoration: none;
     color: black; 
@@ -217,6 +222,46 @@ ul#main-menu>li:hover>a::before{
 
 
 
+
+
+
+/* ======================== footer =========================== */
+
+#wp-footer #head-footer,#copy-right{
+    background-color: #f3f3f3;
+    color: black;
+    text-align: center;
+    
+}
+#wp-footer #head-footer h3{  font-size: 50px;}
+
+#wp-footer-content{ text-transform: capitalize; }
+
+#wp-footer-content a{ text-decoration: none; }
+
+#wp-footer-content .footer-content-header{ font-size: 30px;  padding: 50px 0px 30px 0px;}
+
+#wp-footer-content .footer-content { font-weight: 400;}
+#wp-footer-content .footer-content a{    color: #050505;}
+#wp-footer-content ul.footer-content {    padding-left: 0;}
+
+#wp-footer-content ul.footer-content li{    line-height: 28px;  display: block;}
+#wp-footer-content ul.footer-content li a:hover{    color: #a8a7a7;}
+#wp-footer-content ul.footer-content li.ps-2 a{ font-size: 14px;}
+#wp-footer-content ul.footer-content li.none a:hover{ color: #050505}
+
+#wp-footer-content .footer-content a{ display: inline-block;}
+#wp-footer-content .footer-content a i{ font-size: 50px;}
+#wp-footer-content .footer-content a i:hover{ color:#a8a7a7 ;}
+
+#copy-right{ padding: 20px 0px;  font-size: 14px;}
+
+/* ======================== End footer =========================== */
+
+
+
+
+
 /* ======================== Content =========================== */
 #content{  margin-bottom: 50px;}
 
@@ -224,6 +269,9 @@ ul#main-menu>li:hover>a::before{
 
 #content .home-page-bander-slider{    z-index: -1;}    /* bander-slider */
 
+
+
+/* ======================== End Content =========================== */
 
 /* -------------------content header ----------------------- */
 #content .wp-content-header{  display: flex;  justify-content: center;}
@@ -279,7 +327,7 @@ ul#main-menu>li:hover>a::before{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.slick-arrow{
+ .slick-arrow{
     background: #f3f3f3;
     width: 3rem;
     height: 3rem;
@@ -287,10 +335,10 @@ ul#main-menu>li:hover>a::before{
     border-radius: 50%;
 }
 
-.slick-prev.slick-arrow{ left:  10px ; box-shadow: -3px 0px 7px black;}
-.slick-next.slick-arrow{  right: 10px ; box-shadow: 3px 0px 7px black; }
+ .slick-prev.slick-arrow{ left:  10px ; box-shadow: -3px 0px 7px black;}
+ .slick-next.slick-arrow{  right: 10px ; box-shadow: 3px 0px 7px black; }
 
-.slick-prev::before {
+ .slick-prev::before {
     font-family: "Font Awesome 5 Free";
     content: "\f104";
     color: black;
@@ -298,7 +346,7 @@ ul#main-menu>li:hover>a::before{
     font-weight: bold;
     font-size: 30px;
 }
-.slick-next::before{    
+ .slick-next::before{    
     font-family: "Font Awesome 5 Free";
     content: "\f105";
     color: black;
@@ -307,6 +355,8 @@ ul#main-menu>li:hover>a::before{
 }
 .home-page-slider.new-product .slick-prev.slick-arrow,.home-page-slider.new-product .slick-next.slick-arrow{ top:  200px  }
 /* -------------------End content slider ----------------------- */
+
+
 
 /* -------------------products ----------------------- */
 .product-item .product-img{
@@ -360,14 +410,17 @@ ul#main-menu>li:hover>a::before{
 }
 .product-item .product-detail .buy-add a{  margin: 0px 5px 0px 5px;  width: 50%;}
 
-.product-color-option{
 
-    display: flex;
-   
-  
+
+/* ------------------- End products ----------------------- */
+
+
+
+/* -------------------------------- button --------------------------------- */
+.product-color-option{
+    display: flex;     
     
 }
-
 .color-btn{
     display: block;
     height: 48px;
@@ -391,48 +444,20 @@ ul#main-menu>li:hover>a::before{
     border: 3px solid rgba(0, 0, 0, 0.2);    
 }
 
+/* -------------------------------- end button --------------------------------- */
+
+
+
 #wp-home-page-best-seller .product-item{ margin-bottom: 50px;  }
-/* ------------------- End products ----------------------- */
-
-/* ======================== End Content =========================== */
 
 
-/* ======================== footer =========================== */
-
-#wp-footer #head-footer,#copy-right{
-    background-color: #f3f3f3;
-    color: black;
-    text-align: center;
-    
-}
-#wp-footer #head-footer h3{  font-size: 50px;}
-
-#wp-footer-content{ text-transform: capitalize; }
-
-#wp-footer-content a{ text-decoration: none; }
-
-#wp-footer-content .footer-content-header{ font-size: 30px;  padding: 50px 0px 30px 0px;}
-
-#wp-footer-content .footer-content { font-weight: 400;}
-#wp-footer-content .footer-content a{    color: #050505;}
-#wp-footer-content ul.footer-content {    padding-left: 0;}
-
-#wp-footer-content ul.footer-content li{    line-height: 28px;  display: block;}
-#wp-footer-content ul.footer-content li a:hover{    color: #a8a7a7;}
-#wp-footer-content ul.footer-content li.ps-2 a{ font-size: 14px;}
-#wp-footer-content ul.footer-content li.none a:hover{ color: #050505}
-
-#wp-footer-content .footer-content a{ display: inline-block;}
-#wp-footer-content .footer-content a i{ font-size: 50px;}
-#wp-footer-content .footer-content a i:hover{ color:#a8a7a7 ;}
-
-#copy-right{ padding: 20px 0px;  font-size: 14px;}
-
-/* ======================== End footer =========================== */
-
-/* =================================== Trang chủ ====================================== */
 
 
+
+
+
+
+/* ------------------------------- menu trang ------------------------------ */
 
 
 #content .page-content{
@@ -442,73 +467,65 @@ ul#main-menu>li:hover>a::before{
     font-size: 30px;
     text-transform: capitalize;
 }
+
 #content #wp-page-menu {
     border: 1px solid #d5d5d5;
     border-radius: 5px;
     padding: 15px;
     margin: 15px;
-
 }
-#content #wp-page-menu .menu-header{
 
+#content #wp-page-menu .menu-header{
     text-align: center;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #9f9f9f;
-
-    
+    border-bottom: 2px solid #9f9f9f;    
 }
+
 #content #wp-page-menu .menu-header p{
     margin: 0;
     font-size: 30px;
     text-transform: capitalize;
 }
-#content #wp-page-menu ul {
-    padding: 0;
-}
+
+#content #wp-page-menu ul {  padding: 0;}
+
 #content #wp-page-menu ul li a {
     text-decoration: none;
     color: black;
     text-transform: capitalize;
     padding: 5px 0px;
 }
-#content #wp-page-menu ul li a:hover {
-    color: #939393;
-}
-.heading-page h3{
-    text-transform: capitalize;
-    font-size: 40px;
-}
+#content #wp-page-menu ul li a:hover { color: #939393;}
+
+.heading-page h3{ text-transform: capitalize; font-size: 40px;}
 
 
+/* ----------------------- end menu trang ------------------ */
 
+/* -------------------------- page img ------------------------ */
 #content .page-wrapper #refund-condition-policy .refund-condition-img-box{
     display: flex;
     padding: 10px;
     background-color: #ebebeb;
 }
 
-#content .page-wrapper #refund-condition-policy .refund-condition-img-box img{
-    max-width: 48% ;
-    margin: 10px 10px;
-}
+#content .page-wrapper #refund-condition-policy .refund-condition-img-box img{  max-width: 48% ; margin: 10px 10px;}
+
+
 #content .page-wrapper .guarantee-policy-img-box, .close-cus-policy-img-box {
     text-align: center;
     padding: 30px 0px;
     background-color: #ebebeb;
 }
-#content .page-wrapper #guarantee-policy img, #close-cus-policy img {
-    max-width: 70%;
-}
+#content .page-wrapper #guarantee-policy img, #close-cus-policy img {  max-width: 70%;}
 
 /* #wp-page-menu.policy.sticky{
     position: fixed;
     margin-top: 50px;
 } */
 
-.form-wp{
-    padding: 50px 80px;
-}
+.form-wp{ padding: 50px 80px;}
 
 .form-header{
     font-size: 100px;
@@ -516,11 +533,8 @@ ul#main-menu>li:hover>a::before{
     padding: 50px 20px 5px 0px;
     border-right: 2px solid #e9e9e9;
 }
-.form-header h2{
-    font-size: 60px;
 
-}
-
+.form-header h2{ font-size: 60px;}
 
 .login-box{
     max-width: 470px;
@@ -530,15 +544,10 @@ ul#main-menu>li:hover>a::before{
     padding: 20px;
 }
 
-.dialog-heading .img-fluid{
-    width: 8%;
-}
+.dialog-heading .img-fluid{ width: 8%;}
 
+.wp-product-size{ display: flex;}
 
-
-.wp-product-size{
-    display: flex;
-}
 .product-size a{
     display: inline-block;
     text-decoration: none;
@@ -549,124 +558,80 @@ ul#main-menu>li:hover>a::before{
     color: black;
 }
 
-.product-size a.active{    
-    background-color: #c5c5c5;    
-}
+.product-size a.active{    background-color: #c5c5c5;    }
 
-.input-group.count {
-    width: 115px;
-}
-.input-group .input-group-btn{
-    border: 1px solid #afafaf;
-    background-color: #f3f3f3;
-}
-.input-group .input-number{
-    border-top: 1px solid #afafaf;
-    border-bottom: 1px solid #afafaf;
-}
+.input-group.count {    width: 115px;}
 
-.detail-product .product-name h3{
-    text-transform: capitalize;
-    font-size: 35px;
-}
-.detail-product .pro-price p{
-    font-size: 32px;
+.input-group .input-group-btn{   border: 1px solid #afafaf;    background-color: #f3f3f3;}
 
-}
+.input-group .input-number{    border-top: 1px solid #afafaf;    border-bottom: 1px solid #afafaf;}
 
-.wp-detail-product.sticky{
-    position: fixed;
-    margin-top: 30px;
-}
+.detail-product .product-name h3{   text-transform: capitalize;    font-size: 35px;}
 
-.product-view-slider{
-    display: none;
-}
-.product-view-slider.active{
-    display: block;
-}
-.description-productdetail p{
-    margin-bottom: 0;
-}
+.detail-product .pro-price p{    font-size: 32px;}
+
+/* .wp-detail-product.sticky{  position: fixed;  margin-top: 30px;} */
+
+.product-view-slider{  display: none;}
+
+.product-view-slider.active{    display: block;}
+
+.description-productdetail p{    margin-bottom: 0;}
 
 
+/* ------------------- table -------------------- */
+tr.table-item{  position: relative;}
 
-tr.table-item{
-    position: relative;
-}
-.table td.img{
-    width: 170px;
-    height: auto;
-}
-.table th.count-num{
-    width: 7%;
-}
-.table th.table-pro-info{
-    padding-left: 20px;
-    padding-right: 0;
-}
+.table td.img{  width: 170px;  height: auto;}
+.table th.count-num{   width: 7%;}
+.table th.table-pro-info{   padding-left: 20px;  padding-right: 0;}
 
 .table td .pro-property .color-btn{
     height: 29px;
-    width: 29px;
-   
-     margin: 0px 10px 0px 0px;
-    
+    width: 29px;   
+     margin: 0px 10px 0px 0px;    
 }
-.table td .pro-property p{
-    font-weight: bold;
-    
-}
-.table td a.pro-info{
-    text-decoration: none;
-    color: black;
-    
-}
-.table td p.pro-price{
-    font-size: 20px;  
-    font-weight: 500;  
-    
-}
-.table th.table-pro-price{
-    text-align: end;     
-}
+.table td .pro-property p{  font-weight: bold;  }
+
+.table td a.pro-info{  text-decoration: none;  color: black;   }
+
+.table td p.pro-price{  font-size: 20px;    font-weight: 500;     }
+
+.table th.table-pro-price{    text-align: end;     }
+
 .table td p.price{
     vertical-align: middle;  
     font-size: 28px;
     font-weight: 600;
     text-align: end;
 }
-.table td.wp-price{
-    vertical-align: middle;      
-}
-.table td .pro-property .color-btn::before{
-    top: 2px;
-    left: 2px;
-    
-}
-.table tr td p{
-    margin-bottom: 5px;
-}
-.wp-payment{
-    text-align: end;
-}
-.payment-option{
-    justify-content: flex-end;
-}
-.sum-price{
-    font-size: 35px;
-    font-weight: 600;
-}
+
+.table td.wp-price{ vertical-align: middle;   }
+
+
+.table td .pro-property .color-btn::before{   top: 2px;  left: 2px;  }
+
+.table tr td p{  margin-bottom: 5px;}
+
+.wp-payment{  text-align: end;}
+
+.payment-option{  justify-content: flex-end;}
+
+.sum-price{  font-size: 35px; font-weight: 600;}
+
 .remove-pro{
     position: absolute;
     border-bottom: 0px;
     right: 140px;
 }
+/* -----------------------end tabe ---------------------- */
 
-.product-section-name h3{
-    text-transform: capitalize;
-    font-size: 30px;
-}
+
+
+/* ------------------------navigation -------------------------- */
+
+.product-section-name h3{ text-transform: capitalize; font-size: 30px;}
+
 
 .wp-pagination{
     display: flex;
@@ -674,17 +639,402 @@ tr.table-item{
     margin-top: 30px;
 }
 
-.wp-pagination .Page.navigation{
-    font-size: 30px;
-}
-.wp-pagination li.page-item a{
-   color: black;
-}
+.wp-pagination .Page.navigation{ font-size: 30px;}
 
-.wp-product-section-item .product-item{
-    margin-bottom: 30px;
-}
+.wp-pagination li.page-item a{ color: black;}
 
-/* .inner-wrapper-sticky{
+.wp-product-section-item .product-item{ margin-bottom: 30px;}
+
+/* ------------------------ end navigation -------------------------- */
+
+
+/* ---------------------- colection ---------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  div {
+    display: block;
+  }
+  .ladi-paragraph {
+    width: 100%;
+    display: inline-block;
+  }
+  .ladi-element {
+    position: absolute;
+  }
+  .ladi-wraper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+  .ladi-section {
+    margin: 0 auto;
+    position: relative;
+  }
+  .ladi-wraper{
+    background-color: rgb(255, 252, 248);;
+  }
+  
+  #section1,
+  #section5 {
+    height: 1200px;
+  }
+  #section1 > .ladi-section-background,
+  #section5 > .ladi-section-background,
+  #section7 > .ladi-section-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/bg-1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: repeat;
+    height: 1200px;
+  }
+  .ladi-section .ladi-section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
-} */
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .ladi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    background-color: black;
+    opacity: .3;
+  }
+  .ladi-container {
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+  }
+  .ladi-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  #section1 > .ladi-container > .ladi-image > .ladi-image-background {
+    width: 809.523px;
+    height: 269.609px;
+  }
+  .ladi-image .ladi-image-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-20.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  /* =====section 2===== */
+  #section2 {
+    height: 1200px;
+  }
+  #section2 > .ladi-section-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/bg-2.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: repeat;
+    height: 1200px;
+  }
+  #section2 > .ladi-overlay {
+    background: linear-gradient(
+      321deg,
+      rgba(77, 44, 25, 1),
+      rgba(227, 192, 172, 1)
+    );
+    opacity: 0.42;
+  }
+  #paragraph2 > .ladi-paragraph {
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  #paragraph2 {
+    width: 580px;
+    top: 50%;
+    left: 55%;
+  }
+  
+  /* =====section3===== */
+  #section3 > .ladi-container {
+    padding: 20px 0;
+    height: 1800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 20px;
+  }
+  #ladi_item1 {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+    width: 100%;
+    height: 100%;
+    padding:140px 140px 0px 0px;
+  }
+  #ladi_item2 {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 5;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic1.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #ladi_item3 {
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic2.png");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  #ladi_item4 {
+    grid-column: 1 / span 2;
+    grid-row: 6 / span 2;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic3.png");
+    background-size: cover;
+  }
+  #ladi_item5 {
+    grid-column: 3 / span 3;
+    grid-row: 6 / span 2;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic4.png");
+    background-size: cover;
+  }
+  #ladi_item6 {
+    grid-column: 6 / span 1;
+    grid-row: 6 / span 2;
+  
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic5.png");
+    background-size: cover;
+  }
+  #ladi_item7 {
+    grid-column: 1 / span 3;
+    grid-row: 8 / span 2;
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic6.png");
+    background-size: cover;
+  }
+  #ladi_item8 {
+    grid-column: 4 / span 2;
+    grid-row: 8 / span 2;
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic7.png");
+    background-size: cover;
+  }
+  #ladi_item9 {
+    grid-column: 6 / span 1;
+    grid-row: 8 / span 2;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/Concept-Colections/summer-collection-20/summer-pic8.png");
+    background-size: cover;
+  }
+  
+  /* =====section4===== */
+  #section4 img {
+    height: 700px;
+  }
+  .ladi-wraper .slick-prev.slick-arrow {
+    left: 1rem;
+    z-index: 999;
+  }
+  .ladi-wraper .slick-next.slick-arrow {
+    right: 1rem;
+  }
+  .ladi-wraper .slick-arrow {
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 2rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+  }
+  .ladi-wraper .slick-prev::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f104";
+  
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .ladi-wraper .slick-next::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f105";
+  
+    z-index: 1;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  
+  /* =====section5===== */
+  #section5 > .ladi-section-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/bg-3.png");
+    height: 1000px;
+    margin-top: 20px;
+  }
+  #section5 {
+    height: 1020px;
+  }
+  
+  /* =====setion6===== */
+  #section6 {
+    margin-top: 20px;
+    height: 100%;
+  }
+  .gallery-slider-for img {
+    width: 100%;
+  }
+  .gallery-slider-nav {
+    margin-top: 20px;
+  }
+  #section6 .gallery-slider-nav .detail {
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  
+  #section6 .gallery-slider-nav .detail > img {
+    border-radius: 5px;
+  }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0px;
+  }
+  
+  /* =====section7===== */
+  #section7 > .ladi-section-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/bg-4.png");
+    margin-top: 20px;
+  }
+  #section7 > .ladi-section-background {
+    position: relative !important;
+  }
+  
+  /* =====section8===== */
+  #section8{
+    height: 820px;
+    margin-top: 20px;
+  }
+  
+  #section8 > .ladi-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  #section8 > .ladi-container > .ladi-item1 {
+  
+    grid-column: 1 / span 2;
+    grid-row: 1/ span 2;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/polo-pic1.png");
+    background-size: cover;
+  }
+  
+  #section8 > .ladi-container > .ladi-item2{
+  
+    grid-column: 3 / span 1;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/polo-pic2.png");
+    background-size: cover;
+  }
+  #section8 > .ladi-container > .ladi-item3{
+  
+    grid-column: 4 / span 1;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/polo-pic3.png");
+    background-size: cover;
+  }
+  
+  #section8 > .ladi-container > .ladi-item4{
+  
+    grid-column: 3 / span 2;
+  
+    width: 100%;
+    height: 100%;
+  
+    background-image: url("../img/Concept-Colections/summer-collection-20/polo-pic4.png");
+    background-size: cover;
+  }
+  
+  /* section9 */
+  #section9{
+    height: 800px;
+    margin-top: 20px;
+  }
+  #section9 > .ladi-section-background {
+    background-image: url("../img/Concept-Colections/summer-collection-20/bg-5.png");
+    background-size: cover;
+  }
+  
+  @media (min-width: 768px) {
+    .ladi-section .ladi-container {
+      width: 1200px;
+    }
+  }
+  
+  /* -------------------- colection heading -------------------- */
+  .wp-colection-heading .colection-heading{
+    font-size: 55px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .wp-colection-heading .colection-heading::after{
+      content: '';
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+  }
+  .wp-colection-heading.text-light .colection-heading::after{ 
+    background-color: white; 
+  }
+  
+  .wp-colection-heading .colection-detail p{
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  /* --------------------end colection heading -------------------- */
+
+
+
+  /* ---------------------- colection ---------------------- */

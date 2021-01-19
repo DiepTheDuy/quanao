@@ -1,3 +1,5 @@
+
+//===================== button ====================
 $(document).ready(function(){  
     $('.product-color-option a:first-child').addClass('active');
     $('.wp-product-view-slider>:first-child').addClass('active');
@@ -15,13 +17,14 @@ $(document).ready(function(){
       }); 
       $('.color-btn').removeClass('active');
       $(this).toggleClass('active');               
-    });  
-      
+    });        
 });
+//===================== end button ====================
 
 
 
 
+//======================= scroll menu =======================
 $(document).ready(function(){
   
   $('ul#main-menu li').hover(function(){
@@ -29,7 +32,14 @@ $(document).ready(function(){
   });
   
 });
+//======================= end scroll menu =======================
 
+
+
+
+
+
+//======================= Trang chủ ==================
 
 $(document).ready(function(){
    $(window).scroll(function(){
@@ -61,9 +71,11 @@ $(document).ready(function(){
       if($(window).scrollTop()>1600){
         $('#wp-home-page-best-seller .best-seller').addClass('visible animate__animated animate__slideInUp');
       }
-   });
-        
+   });        
 });
+//======================= end  Trang chủ ==================
+
+
 
 // $(document).ready(function(){
 //   $(window).scroll(function(){
@@ -82,6 +94,10 @@ $(document).ready(function(){
 // });
 
 
+
+
+//================ search box ==============
+
 $(document).ready(function(){
   $('#icon-search>a').click(function(){
     $('#bg-search-box').addClass('active');
@@ -91,11 +107,18 @@ $(document).ready(function(){
     $('#bg-search-box').removeClass('active');
     $('#wp-search-box').removeClass('open-search-box');
   });
+  $('#bg-search-box').click(function(){
+    $(this).removeClass('active');
+    $('#wp-search-box').removeClass('open-search-box');
+  });
 });
+//================ end search box ==============
 
 
 
 
+
+//================== count ======================
 
 $( document ).ready(function() {
   $('.btn-number').click(function(e){
@@ -124,24 +147,23 @@ $( document ).ready(function() {
               }
               if(parseInt(input.val()) == maxValue) {
                   $(this).attr('disabled', true);
-              }
-  
+              }  
           }
       } else {
           input.val(0);
       }
   });
+
   $('.input-number').focusin(function(){
      $(this).data('oldValue', $(this).val());
   });
+
   $('.input-number').change(function() {
-      
-      var minValue =  parseInt($(this).attr('min'));
+            var minValue =  parseInt($(this).attr('min'));
       var maxValue =  parseInt($(this).attr('max'));
       if(!minValue) minValue = 1;
       if(!maxValue) maxValue = 30;
-      var valueCurrent = parseInt($(this).val());
-      
+      var valueCurrent = parseInt($(this).val());      
       var name = $(this).attr('name');
       if(valueCurrent >= minValue) {
           $(".btn-number[data-type='minus'][data-field='"+name+"']").removeAttr('disabled')
@@ -154,10 +176,9 @@ $( document ).ready(function() {
       } else {
           alert('Bạn đã đặt quá số lượng cho phép ( tối đa 30 )');
           $(this).val($(this).data('oldValue'));
-      }
-      
-      
+      }     
   });
+
   $(".input-number").keydown(function (e) {
           // Allow: backspace, delete, tab, escape, enter and .
           if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
@@ -173,8 +194,9 @@ $( document ).ready(function() {
               e.preventDefault();
           }
   });
+  
 });
-
+//================== end count ======================
 
 $(document).ready(function(){
       $('.wp-product-size>.product-size:first-child a').addClass('active');
@@ -185,15 +207,3 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function () {
-  $('.wp-detail-product').stickySidebar({
-    topSpacing: 100,
-    bottomSpacing: 60
-  });
-});
-
-$(document).ready(function () {
-  $('.side-bar').stickySidebar({
-    topSpacing: 100,
-  });
-});
