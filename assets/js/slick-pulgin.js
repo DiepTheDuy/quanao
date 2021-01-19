@@ -49,6 +49,8 @@ $(".gallery-slider-nav").slick({
   focusOnSelect: true,
 });
 
+
+
 $(".product-view-slider-for").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
