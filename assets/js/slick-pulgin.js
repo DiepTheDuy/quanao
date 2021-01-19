@@ -88,4 +88,4 @@ $(".gallery-slider-nav").slick({
   arrows: false
 });
 
-//==== end collection====
+//==== end collection====q
