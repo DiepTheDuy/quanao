@@ -233,65 +233,71 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-wp">
-                                <form>
-                                    <div class="mb-3">  
+                                <form name="myForm" action="./index.html" onsubmit = "return(validate());">
+                                    <div class="">  
                                         <label for="exampleInputName" class="form-label">Nhập họ tên</label>                                  
-                                        <input type="text" class="form-control" id="exampleInputName" placeholder="Họ tên">
-                                        <span id="checkInputName"></span>
+                                        <input type="text" name="FullName" class="form-control" id="exampleInputName" placeholder="Họ tên">
+                                        <span  class="span-validationform" id="checkInputName"></span>
                                     </div>
-                                    <div class="mb-3 d-flex">  
+                                    <div class="d-flex">  
                                     <div class="w-50">
                                         <label for="exampleInputEmail1" class="form-label">Tài khoản Email</label>                                
-                                        <input type="email" class="form-control" id="exampleInputEmail1" on aria-describedby="emailHelp" placeholder="Email">
-                                        <span id="checkInputEmail1"></span>
+                                        <input type="text" name="Email" class="form-control" id="exampleInputEmail1" on aria-describedby="emailHelp" placeholder="Email">
+                                        <span class="span-validationform" id="checkInputEmail1"></span>
                                     </div>  
                                     <div class="w-50">
                                         <label for="exampleInputPhoneNumber" class="form-label">Số điện thoại</label>                               
-                                        <input type="text" class="form-control ms-1" id="exampleInputPhoneNumber" aria-describedby="emailHelp" placeholder="Số điện thoại">
-                                        <span id="checkInputPhoneNumber"></span>
+                                        <input type="text" name="sdt" class="form-control ms-1" id="exampleInputPhoneNumber" aria-describedby="emailHelp" placeholder="Số điện thoại">
+                                        <span class="span-validationform" style="margin-left: 12px;" id="checkInputPhoneNumber"></span>
                                     </div>
                                     
                                     </div>
-                                    <div class="mb-3">
+                                    <div class="">
                                         <label for="exampleInputAddress" class="form-label">Địa chỉ</label>
-                                        <input type="text" class="form-control" id="exampleInputAddress" placeholder="Địa chỉ">
-                                        <span id="checkInputAddress"></span>
+                                        <input type="text" name="Address" class="form-control" id="exampleInputAddress" placeholder="Địa chỉ">
+                                        <span class="span-validationform" id="checkInputAddress"></span>
                                     </div>
-                                    <div class="mb-3 d-flex">                                    
-                                        <select class="form-select" id="inputGroupSelecCity" >
-                                            <option selected>Tỉnh / thành</option>
+                                    <div class=" d-flex">                                    
+                                        <select class="form-select" name="SelecCity" id="inputGroupSelecCity" >
+                                            <option selected value="">Tỉnh / thành</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                             
                                         </select>
-                                        <select class="form-select ms-1" id="inputGroupSelectDistric">
-                                            <option selected>Quận / huyện</option>
+                                       
+                                        <select class="form-select ms-1" name="SelectDistric" id="inputGroupSelectDistric">
+                                            <option selected value="">Quận / huyện</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>
                                             
                                         </select>
-                                        <select class="form-select  ms-1" id="inputGroupSelectWards">
-                                            <option selected>Phường xã</option>
+                                        
+                                        <select class="form-select  ms-1" name="SelectWards" id="inputGroupSelectWards">
+                                            <option selected value="">Phường xã</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
                                             <option value="3">Three</option>                                        
-                                        </select>
-                                        <span></span>
+                                        </select>                
                                     </div>
-                                    <div class="mb-3">
+                                    <div class=" d-flex">                                    
+                                        <span class="span-validationform" id="checkGroupSelecCity" style="width: 100%;"></span>
+                                        <span class="span-validationform" id="checkGroupSelectDistric" style="width: 100%;"></span>
+                                        <span class="span-validationform" id="checkGroupSelectWards" style="width: 100%;"></span>
+                                    </div>
+                                    <div >
                                         <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
-                                        <span id="checkInputPassword1"></span>
+                                        <input type="password" name="Password1" class="form-control" id="exampleInputPassword1" placeholder="Mật khẩu">
+                                        <span class="span-validationform"  id="checkInputPassword1"></span>
                                     </div> 
-                                    <div class="mb-3 ">
+                                    <div >
                                         <label for="exampleInputPassword2" class="form-label">Nhập lại mật khẩu</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Xác nhận">
-                                        <span id="checkInputPassword2"></span>
+                                        <input type="password" name="Password2" class="form-control" id="exampleInputPassword2" placeholder="Xác nhận">
+                                        <span class="span-validationform"  id="checkInputPassword2"></span>
                                     </div> 
-                                    <div class="mb-3 d-flex">
-                                        <p>Thannh toán khi nhận hàng</p>
+                                    <div class=" d-flex">
+                                        <p>Thanh toán khi nhận hàng</p>
                                         <a class=" ms-3 text-decoration-none" href="index.html"> Quay lại trang chủ</a>
                                     </div>                           
                                     <button type="submit" class="btn btn-outline-dark">Đăng ký</button>
@@ -400,6 +406,7 @@
     <script src="assets/js/bootstrap.min.js"></script>   
     <script src="assets/js/slick-pulgin.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/checkform.js"></script>
 </body>
 
 </html>
