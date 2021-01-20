@@ -27,6 +27,7 @@ checkSdt = () => {
     return false;
   }
 };
+
 function validate() {
   var thePName = document.getElementById("checkInputName");
   var thePEmail = document.getElementById("checkInputEmail1");
@@ -60,13 +61,14 @@ function validate() {
   if (document.myForm.Password1.value == "") {
     thePPassword1.innerHTML = "Vui lòng nhập Mật Khẩu";
   } else {
-    kiemMatKhau();
+    kiemMatKhau('exampleInputPassword1','checkInputPassword1');
   }
   if (document.myForm.Password2.value == "") {
     thePPassword2.innerHTML = "Vui lòng Xác Nhận Mật Khẩu";
   } else {
-    xacNhanMatKhau();
+    xacNhanMatKhau('exampleInputPassword1','exampleInputPassword2','checkInputPassword2');
   }
+  
   if (document.myForm.SelecCity.value == "") {
     thePCity.innerHTML = "Chọn Tỉnh/TP";
   } else {
@@ -89,14 +91,40 @@ function validate() {
     document.myForm.Address.value == "" ||
     document.myForm.Password1.value == "" ||
     document.myForm.Password2.value == "" ||
+    document.myForm.SelecCity.value == "" ||
+    document.myForm.SelectDistric.value == ""||
+    document.myForm.SelectWards.value == "" ||
     !kiemTraEmailHopLe() ||
     !kiemTraTatCaLaSo() ||
-    !xacNhanMatKhau() ||
-    !kiemMatKhau()
+    !xacNhanMatKhau('exampleInputPassword1','exampleInputPassword2','checkInputPassword2') ||
+    !kiemMatKhau('exampleInputPassword1','checkInputPassword1')
   ) {
     return false;
   }
 
+  return true;
+}
+function validateChangePassWord(){
+  var theP1 = document.getElementById("checkInputPasswordNew1");
+  var theP2 = document.getElementById("checkInputPasswordNew2");
+  if (document.myForm.PasswordNew1.value == "") {
+    theP1.innerHTML = "Vui lòng nhập Mật Khẩu";
+  } else {
+    kiemMatKhau('exampleInputPasswordNew1','checkInputPasswordNew1');
+  }
+  if (document.myForm.PasswordNew2.value == "") {
+    theP2.innerHTML = "Vui lòng Xác Nhận Mật Khẩu";
+  } else {
+    xacNhanMatKhau('exampleInputPasswordNew1','exampleInputPasswordNew2','checkInputPasswordNew2');
+  }
+  if (
+    document.myForm.PasswordNew1.value == "" ||
+    document.myForm.PasswordNew2.value == "" ||
+    !kiemMatKhau('exampleInputPasswordNew1','checkInputPasswordNew1') ||
+    !xacNhanMatKhau('exampleInputPasswordNew1','exampleInputPasswordNew2','checkInputPasswordNew2') 
+  ) {
+    return false;
+  }
   return true;
 }
 function kiemTraEmailHopLe() {
@@ -127,10 +155,10 @@ function kiemTraTatCaLaSo() {
     return false;
   }
 }
-function xacNhanMatKhau() {
-  var inputTag1 = document.getElementById("exampleInputPassword1").value;
-  var inputTag2 = document.getElementById("exampleInputPassword2").value;
-  var theP2 = document.getElementById("checkInputPassword2");
+function xacNhanMatKhau(example1,example2,check) {
+  var inputTag1 = document.getElementById(example1).value;
+  var inputTag2 = document.getElementById(example2).value;
+  var theP2 = document.getElementById(check);
   if (inputTag1 == inputTag2) {
     theP2.innerHTML = "";
     return true;
@@ -139,9 +167,9 @@ function xacNhanMatKhau() {
     return false;
   }
 }
-function kiemMatKhau() {
-  var inputText = document.getElementById("exampleInputPassword1").value;
-  var theP = document.getElementById("checkInputPassword1");
+function kiemMatKhau(example,check) {
+  var inputText = document.getElementById(example).value;
+  var theP = document.getElementById(check);
 
   if (inputText.length < 8 || inputText.length > 16) {
     theP.innerHTML = "Hãy Nhập vào giá trị từ 8 đến 16 ";

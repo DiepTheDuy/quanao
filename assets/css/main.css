@@ -490,7 +490,7 @@ ul#main-menu > li:hover > a::before {
 }
 
 .product-item .product-detail > a {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 400;
   text-decoration: none;
   display: inline-block;
@@ -507,7 +507,7 @@ ul#main-menu > li:hover > a::before {
 }
 
 .pro-price p {
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0;
 }
@@ -1222,3 +1222,56 @@ div {
 /* --------------------end colection heading -------------------- */
 
 /* ---------------------- colection ---------------------- */
+/* ---------------------- Responsive ---------------------- */
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575.98px) {
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 767.98px) {
+    
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .product-item .product-detail .buy-add {
+    display: block;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+  }
+  .product-item .product-detail .buy-add a {
+    height: 100%;
+    margin: 5px;
+    width: 100%;
+  }
+  .product-img .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .product-item .product-img {
+    height: 15rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  #header-wrap-icon {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .product-img .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+  .product-item .product-img {
+    height: 20rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .product-img .img-fluid {
+    height: 100%;
+    width: 100%;
+  }
+}

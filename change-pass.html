@@ -233,7 +233,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-wp">
-                                <form>                                    
+                                <form name="myForm" action="./index.html" onsubmit = "return(validateChangePassWord());">                                    
                                     <div class="mb-3">
                                         <label for="exampleInputPassword1" class="form-label">Mật khẩu cũ</label>
                                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Nhập mật khẩu cũ">
@@ -241,13 +241,13 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputPasswordNew1" class="form-label">Mật khẩu mới</label>
-                                        <input type="password" class="form-control" id="exampleInputPasswordNew1" placeholder="Nhập mật khẩu mới">
-                                        <span></span>
+                                        <input type="password" name="PasswordNew1" class="form-control" id="exampleInputPasswordNew1" placeholder="Nhập mật khẩu mới">
+                                        <span class="span-validationform" id="checkInputPasswordNew1"></span>
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputPasswordNew2" class="form-label">Xác nhận mật khẩu mới</label>
-                                        <input type="password" class="form-control" id="exampleInputPasswordNew2" placeholder="Nhập lại mật khẩu mới">
-                                        <span></span>
+                                        <input type="password" name="PasswordNew2" class="form-control" id="exampleInputPasswordNew2" placeholder="Nhập lại mật khẩu mới">
+                                        <span class="span-validationform" id="checkInputPasswordNew2"></span>
                                     </div>    
                                     <button type="submit" class="btn btn-outline-dark">Thay đổi</button>
                                 </form>
@@ -356,6 +356,7 @@
     <script src="assets/js/bootstrap.min.js"></script>   
     <script src="assets/js/slick-pulgin.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/checkform.js"></script>
 </body>
 
 </html>

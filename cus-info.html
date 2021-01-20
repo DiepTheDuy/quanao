@@ -233,7 +233,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-wp">
-                                <form>
+                                <form name="myForm" onsubmit = "return(validate());">
                                     <div class="mb-3">  
                                         <label for="exampleInputName" class="form-label">Họ tên</label>                                  
                                         <input type="text" class="form-control" id="exampleInputName" placeholder="Họ tên">
@@ -279,6 +279,11 @@
                                             <option value="3">Three</option>                                        
                                         </select>
                                         <span></span>
+                                    </div>
+                                    <div class=" d-flex">                                    
+                                        <span class="span-validationform" id="checkGroupSelecCity" style="width: 100%;"></span>
+                                        <span class="span-validationform" id="checkGroupSelectDistric" style="width: 100%;"></span>
+                                        <span class="span-validationform" id="checkGroupSelectWards" style="width: 100%;"></span>
                                     </div>                                    
                                     <div class="mb-3">
                                         <p></p><a class="text-decoration-none" href="change-pass.html">Đổi mật khẩu</a> / <a class="text-decoration-none" href="">Đăng xuất</a></p>
